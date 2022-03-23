@@ -5286,9 +5286,16 @@ body.light .site-footer .social-links-menu li a i {
     }
 }
 
+.mabtme {
+    margin-top: 30px;
+}
+
 @media (min-width:991px) {
     .changeelepos {
         transform: translateX(calc(-200% + 10px));
+    }
+    .mabtme {
+        margin-top: 0px;
     }
 }
 
@@ -5303,4 +5310,33 @@ body.light .site-footer .social-links-menu li a i {
 #masthead.site-header.full-width .wrap {
     padding-left: 20px;
     padding-top: 20px;
+}
+
+
+/*Slider Image Fix css*/
+
+.portfolio .media-wrap img {
+    margin: auto;
+}
+
+.single-portfolio .portfolio .entry-header {
+    margin-bottom: 20px;
+}
+
+.cninmob {
+    margin-left: 35%;
+}
+
+@media only screen and (max-width:765px) {
+    .cninmob {
+        margin-left: 0px;
+    }
+}
+
+.changebtns:hover {
+    text-decoration: none;
+}
+
+.changebtns a:hover {
+    text-decoration: underline;
 }
