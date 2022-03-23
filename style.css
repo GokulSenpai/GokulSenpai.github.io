@@ -5263,3 +5263,31 @@ body.light .site-footer .social-links-menu li a,
 body.light .site-footer .social-links-menu li a i {
     color: #707070;
 }
+
+
+/*---Changes-----*/
+
+.changebtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.changebtns a {
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .changebtns {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:991px) {
+    .changeelepos {
+        transform: translateX(calc(-200% + 10px));
+    }
+}
