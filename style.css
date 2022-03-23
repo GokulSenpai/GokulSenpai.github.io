@@ -5291,3 +5291,16 @@ body.light .site-footer .social-links-menu li a i {
         transform: translateX(calc(-200% + 10px));
     }
 }
+
+.site-owner {
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    padding-left: 20px;
+}
+
+#masthead.site-header.full-width .wrap {
+    padding-left: 20px;
+    padding-top: 20px;
+}
