@@ -7,7 +7,8 @@ body {
     color: #9a9a9a;
 }
 
-img {
+img,
+video {
     max-width: 100%;
     height: auto;
 }
@@ -3404,7 +3405,8 @@ input[type=submit]:hover {
     margin: auto;
 }
 
-.portfolio .media-wrap img {
+.portfolio .media-wrap img,
+.portfolio .media-wrap video {
     display: block;
 }
 
@@ -5315,7 +5317,8 @@ body.light .site-footer .social-links-menu li a i {
 
 /*Slider Image Fix css*/
 
-.portfolio .media-wrap img {
+.portfolio .media-wrap img,
+.portfolio .media-wrap video {
     margin: auto;
 }
 
