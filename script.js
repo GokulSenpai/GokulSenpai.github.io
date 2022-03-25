@@ -36,7 +36,7 @@ function handleMove(e) {
     const xRotation = -20 * ((yVal - height / 2) / height)
 
     /* Generate string for CSS transform property */
-    const string = 'perspective(800px) scale(1.05) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'
+    const string = 'perspective(1000px) scale(1.05) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'
 
     /* Apply the calculated transformation */
     el.style.transform = string
@@ -44,15 +44,15 @@ function handleMove(e) {
 
 /* Add listener for mouseout event, remove the rotation */
 el.addEventListener('mouseout', function() {
-    el.style.transform = 'perspective(800px) scale(1) rotateX(0) rotateY(0)'
+    el.style.transform = 'perspective(1000px) scale(1) rotateX(0) rotateY(0)'
 })
 
 /* Add listener for mousedown event, to simulate click */
 el.addEventListener('mousedown', function() {
-    el.style.transform = 'perspective(800px) scale(0.95) rotateX(0) rotateY(0)'
+    el.style.transform = 'perspective(1000px) scale(0.95) rotateX(0) rotateY(0)'
 })
 
 /* Add listener for mouseup, simulate release of mouse click */
 el.addEventListener('mouseup', function() {
-    el.style.transform = 'perspective(800px) scale(1.05) rotateX(0) rotateY(0)'
+    el.style.transform = 'perspective(1000px) scale(1.05) rotateX(0) rotateY(0)'
 })
