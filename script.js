@@ -35,6 +35,15 @@ function handleMove(e) {
     /* Calculate the rotation along the X-axis */
     const xRotation = -20 * ((yVal - height / 2) / height)
 
+    if (yRotation > 40)
+        yRotation = 40;
+    if (yRotation < -40)
+        yRotation = -40;
+    if (xRotation > 40)
+        xRotation = 40;
+    if (xRotation < -40)
+        xRotation = 40;
+
     /* Generate string for CSS transform property */
     const string = 'perspective(1000px) scale(1.05) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'
 
